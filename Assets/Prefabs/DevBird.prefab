@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 6810565680511959552}
   - component: {fileID: 2713608002474946865}
   - component: {fileID: 5281641829351341911}
+  - component: {fileID: 6702011161033884403}
+  - component: {fileID: 1237519899294905487}
   m_Layer: 0
   m_Name: DevBird
   m_TagString: Untagged
@@ -175,3 +177,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36571c44bb0f30a4b9ebb5a9cdec6326, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BirdCollision: {fileID: 6702011161033884403}
+  BirdMovement: {fileID: 1237519899294905487}
+--- !u!114 &6702011161033884403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4938241271602744185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d60bf470868883343aa90e32c4fbbe86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BirdMain: {fileID: 5281641829351341911}
+--- !u!114 &1237519899294905487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4938241271602744185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79d8856166a66414e948fb8765063e37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BirdMain: {fileID: 5281641829351341911}
