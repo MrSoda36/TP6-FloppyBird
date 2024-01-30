@@ -11,6 +11,7 @@ public class BirdCollision : MonoBehaviour
         {
             _isAlive = false;
             BirdMain.BirdMovement.enabled = false;
+            GameManager.Instance.GameOver();
         }
     }
 }

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1237519899294905487}
   m_Layer: 0
   m_Name: DevBird
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36571c44bb0f30a4b9ebb5a9cdec6326, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BirdCollision: {fileID: 6702011161033884403}
+  birdCollision: {fileID: 6702011161033884403}
   BirdMovement: {fileID: 1237519899294905487}
 --- !u!114 &6702011161033884403
 MonoBehaviour:
