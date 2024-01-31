@@ -18,5 +18,7 @@ public class BirdMovement : MonoBehaviour
         {
             _rigidbody2D.velocity = Vector2.up * _jumpForce;
         }
+
+        transform.rotation = Quaternion.Euler(0f, 0f, _rigidbody2D.velocity.y * 2f);
     }
 }
