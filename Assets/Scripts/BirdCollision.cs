@@ -2,15 +2,14 @@
 
 public class BirdCollision : MonoBehaviour
 {
-    public BirdMain BirdMain;
-    private bool _isAlive = true;
+    [SerializeField]
+    private BirdMain _birdMain;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Obstacle"))
+        if (collision.gameObject.CompareTag("Obstacle") || collision.gameObject.CompareTag("Floor"))
         {
-            _isAlive = false;
-            BirdMain.BirdMovement.enabled = false;
+            _birdMain.BirdMovement.enabled = false;
             GameManager.Instance.GameOver();
         }
     }

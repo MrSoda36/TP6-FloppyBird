@@ -7,7 +7,7 @@ public class ObstacleDestroyer : MonoBehaviour
         if (collision.gameObject.CompareTag("Obstacle"))
         {
             Debug.Log("Destroying obstacle");
-            Destroy(collision.gameObject);
+            Destroy(collision.gameObject.transform.parent.gameObject);
         }
     }
 }

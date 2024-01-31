@@ -2,7 +2,8 @@
 
 public class BirdMovement : MonoBehaviour
 {
-    public BirdMain BirdMain;
+    [SerializeField]
+    private BirdMain _birdMain;
     private Rigidbody2D _rigidbody2D;
     private float _jumpForce = 5f;
 

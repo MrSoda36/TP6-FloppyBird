@@ -123,6 +123,28 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &557245868 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6702011161033884403, guid: 652fea853f10e4a4d8c725101a5a5656, type: 3}
+  m_PrefabInstance: {fileID: 5135910926110393665}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d60bf470868883343aa90e32c4fbbe86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &557245869 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5281641829351341911, guid: 652fea853f10e4a4d8c725101a5a5656, type: 3}
+  m_PrefabInstance: {fileID: 5135910926110393665}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36571c44bb0f30a4b9ebb5a9cdec6326, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -529,6 +551,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _obstaclePrefab: {fileID: 1645512673432904167, guid: 29b75808cf0f45741b6e784f24432155, type: 3}
   _obstacleDelay: 2
+  _posY:
+  - -1.5
+  - 0
+  - 1.5
 --- !u!1 &1858473080
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,6 +653,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1237519899294905487, guid: 652fea853f10e4a4d8c725101a5a5656, type: 3}
+      propertyPath: _birdMain
+      value: 
+      objectReference: {fileID: 557245869}
     - target: {fileID: 4423187694035876517, guid: 652fea853f10e4a4d8c725101a5a5656, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -671,6 +701,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bird
       objectReference: {fileID: 0}
+    - target: {fileID: 5281641829351341911, guid: 652fea853f10e4a4d8c725101a5a5656, type: 3}
+      propertyPath: _birdCollision
+      value: 
+      objectReference: {fileID: 557245868}
+    - target: {fileID: 6702011161033884403, guid: 652fea853f10e4a4d8c725101a5a5656, type: 3}
+      propertyPath: _birdMain
+      value: 
+      objectReference: {fileID: 557245869}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

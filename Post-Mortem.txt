@@ -1,0 +1,13 @@
+Post-Mortem
+- Ajout d'un GameManager pour la gestion du Game Over
+- La variable isAlive dans BirdCollision n'était pas utile
+- La variable jumpPower dans BirdMovement est renommé _jumpForce
+- La fonction Jump() dans BirdMovement n'a pas été faite
+- La variable speed dans Obstacle est renommé _speed
+- La fonction MoveLeft() dans Obstacle n'a pas été faite
+- La classe ObstacleGenerator a plusieurs changements:
+	- Les variables GameObject _obstacle, float _obstacleDelay et float[] _posY
+	- La fonction CreateObstacle() passe de void à IEnumerator pour être une coroutine
+	- La fonction DestroyObstacle() a été supprimée, cette fonctionnalité est déléguée à la classe ObstacleDestroyer
+- La classe ObstacleDestroyer a été ajouter : 
+	- A un OnTriggerEnter2D() pour détruire les obstacles qui sortent de l'écran
